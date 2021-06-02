@@ -1,4 +1,6 @@
+import { getNumberOfCurrencyDigits } from '@angular/common';
 import { Component } from '@angular/core';
+import { DiscountService } from './discount.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-discount-calculator';
+
+  constructor(public discountService:DiscountService) { }
+
+
+
 }
+
+
+
+
+
+
+
